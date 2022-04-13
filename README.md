@@ -15,7 +15,7 @@ To run this repository you'll need [Git](https://git-scm.com) and [Node.js](http
 # Clone this repository
 git clone https://github.com/iamashley0/discord-unspy/
 # Go into the repository
-cd discord-uspy
+cd discord-unspy
 # Install dependencies
 npm install
 # Run the app
