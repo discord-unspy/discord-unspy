@@ -1,0 +1,21 @@
+{
+  "name": "discord-unspy",
+  "version": "1.0.0",
+  "description": "Discord whitout spyware",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "discord"
+  ],
+  "author": "Ashley",
+  "license": "MIT",
+  "dependencies": {
+    "@cliqz/adblocker": "^1.23.7",
+    "@cliqz/adblocker-electron": "^1.23.7",
+    "electron": "^18.0.3",
+    "node-fetch": "^2.6.1"
+  }
+}
