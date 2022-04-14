@@ -1,6 +1,6 @@
 <div align="center">
  
-<img height="200" src="https://user-images.githubusercontent.com/65588168/163461090-8a8f6876-a5b3-4d3e-8c6a-1f1be4993f76.png">
+<img src="https://user-images.githubusercontent.com/65588168/163461090-8a8f6876-a5b3-4d3e-8c6a-1f1be4993f76.png">
  
 # Discord Unspy Edition
 
