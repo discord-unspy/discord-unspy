@@ -60,8 +60,8 @@ const { ElectronBlocker, fullLists, Request }= await import ('@cliqz/adblocker-e
   } else if(ver.CurrentVersion === "Canary"){
    var url = config.DISCORD_CLIENT_CANARY
   }
-  
-  mainWindow.loadURL(config.DISCORD_CLIENT_URL, {
+
+  mainWindow.loadURL(url, {
   userAgent:config.UserAgent
 });
 
