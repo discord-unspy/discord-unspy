@@ -24,7 +24,6 @@ p {
 
 /* Styling of window frame and titlebar */
 body {
-  border: 1px solid #48545c;
   overflow-y: hidden;
 }
 
