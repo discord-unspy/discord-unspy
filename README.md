@@ -1,4 +1,4 @@
-   <div align="center">
+<div align="center">
 
 <img height="200" src="https://discord.com/assets/3437c10597c1526c3dbd98c737c2bcae.svg"/>
 
@@ -27,6 +27,9 @@ If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.c
 1.Go to line 54 <a href="https://github.com/iamashley0/discord-unspy/blob/main/src/main.js#L54">of main.js</a><br>
 2.change config.DISCORD_CLIENT_URL to config.DISCORD_CLIENT_PTB if you want to use ptb,change it to config.DISCORD_CLIENT_CANARY if you wanna use canary <br>
 3.theres no step 3 lmao<br>
+
+# Change the user agent string:
+Changing the user agent script is actully simple,on config.json There should be a string called "UserAgent" and if you change it,the browsers user agent should change >~<
 
 # NOTE
 This is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself,so this is not against discords tos
