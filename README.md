@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <div align="center">
+=======
+ <div align="center">
+>>>>>>> 3a5c2f3 (h)
 
 <img height="200" src="https://discord.com/assets/3437c10597c1526c3dbd98c737c2bcae.svg"/>
 
@@ -6,7 +10,11 @@
 
 **Discord's Electron client,now whit built in tracker blocker!**
 </div>
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 3a5c2f3 (h)
 # INSTALL-RUN
 
 To run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
