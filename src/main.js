@@ -61,7 +61,7 @@ const { ElectronBlocker, fullLists, Request }= await import ('@cliqz/adblocker-e
    var url = config.DISCORD_CLIENT_CANARY
   }
   
-  mainWindow.loadURL(url, {
+  mainWindow.loadURL(config.DISCORD_CLIENT_URL, {
   userAgent:config.UserAgent
 });
 
