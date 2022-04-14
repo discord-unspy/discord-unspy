@@ -24,10 +24,7 @@ npm start
 If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
 # How to use discord ptb/canary?
-see:<a href="https://github.com/iamashley0/discord-unspy/tree/main/versions"> Versions </a>
-
-# Change the user agent string:
-Changing the user agent script is actully simple,on config.json There should be a string called "UserAgent" and if you change it,the browsers user agent should change >~<
+change config.json owo
 
 # NOTE
 This is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself,so this is not against discords tos
