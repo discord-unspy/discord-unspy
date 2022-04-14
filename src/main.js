@@ -81,7 +81,7 @@ app.on('ready', function() {
         } }
     ]);
     tray = new Tray('src/icons/discord.png')
-    tray.setToolTip('Super secret menu lmao ')
+    tray.setToolTip('Super Duper secret menu lmao ')
     tray.setContextMenu(contextMenu)
     tray.on('click', function(){
         mainWindow.show();
