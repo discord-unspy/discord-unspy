@@ -1,6 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const fetch = require('node-fetch');
 const { readFile, writeFile } = require('node:fs/promises');
+const config = require('../config.json');
 
 let mainWindow = null;
 
@@ -50,7 +51,7 @@ const { ElectronBlocker, fullLists, Request }= await import ('@cliqz/adblocker-e
       console.log('style', style.length, url);
     });
 
-mainWindow.loadURL('https://discord.com/app/',
+mainWindow.loadURL(config.DISCORD_CLIENT_URL,
      {userAgent: 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.45 Chrome/91.0.4472.164 Electron/13.6.6 Safari/537.36'});
 
   mainWindow.on('closed', () => {
