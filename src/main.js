@@ -1,4 +1,4 @@
- const {app, BrowserWindow, ipcMain, Tray, Menu} = require('electron');
+ const {app, BrowserWindow, ipcMain, Tray, Menu, shell} = require('electron');
 const fetch = require('node-fetch');
 const { readFile, writeFile } = require('node:fs/promises');
 const config = require('../config.json');
@@ -74,14 +74,18 @@ async function createWindow () {
 // Some APIs can only be used after this event occurs.
 app.on('ready', function() {
     createWindow()
+    const str = config.DISCORD_VERSION
+    const str2 = str.toLowerCase()
+    const str3 = str2.charAt(0).toUpperCase() + str2.slice(1);
+
     const contextMenu = Menu.buildFromTemplate([
-        { label: 'Discord ' + config.DISCORD_VERSION,  },
-        { label: 'Quit Discord ' + config.DISCORD_VERSION, click:  function(){
-            app.quit();
-        } }
+        { label: `Discord Unspy 2.0.2 ${str3}`, },
+        { label: 'Source code ', click:  function(){shell.openExternal('https://github.com/iamashley0/Discord')}},
+        { label: 'Report bugs ', click:  function(){shell.openExternal('https://github.com/iamashley0/Discord/issues')}},
+        { label: `Quit Discord Unspy (Dont :c)`, click:  function(){app.quit();}}
     ]);
     tray = new Tray('src/icons/discord.png')
-    tray.setToolTip('Super Duper secret menu lmao ')
+    tray.setToolTip('Super duper secret menu LMAO ')
     tray.setContextMenu(contextMenu)
     tray.on('click', function(){
         mainWindow.show();
