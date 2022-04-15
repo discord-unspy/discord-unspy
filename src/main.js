@@ -1,4 +1,4 @@
- const {app, BrowserWindow, ipcMain, Tray, Menu, shell} = require('electron');
+const {app, BrowserWindow, ipcMain, Tray, Menu, shell} = require('electron');
 const fetch = require('node-fetch');
 const { readFile, writeFile } = require('node:fs/promises');
 const config = require('../config.json');
@@ -10,7 +10,7 @@ let mainWindow;
 
 async function createWindow () {
     // Create the browser window.
-    const { ElectronBlocker, fullLists, Request }= await import ('@cliqz/adblocker-electron'); // eslint-disable-line
+    const { ElectronBlocker, fullLists, Request } = await import ('@cliqz/adblocker-electron'); // eslint-disable-line
     mainWindow = new BrowserWindow({
         width: 1200,
         height: 600,
@@ -77,15 +77,15 @@ app.on('ready', function() {
     const str = config.DISCORD_VERSION
     const str2 = str.toLowerCase()
     const str3 = str2.charAt(0).toUpperCase() + str2.slice(1);
-
     const contextMenu = Menu.buildFromTemplate([
-        { label: `Discord Unspy 2.0.2 ${str3}`, },
+        { label: `Discord Unspy 2.0.2 ${str3} by Ashley`, },
         { label: 'Source code ', click:  function(){shell.openExternal('https://github.com/iamashley0/Discord')}},
-        { label: 'Report bugs ', click:  function(){shell.openExternal('https://github.com/iamashley0/Discord/issues')}},
-        { label: `Quit Discord Unspy (Dont :c)`, click:  function(){app.quit();}}
+        { label: 'Issues', click:  function(){shell.openExternal('https://github.com/iamashley0/Discord/issues')}},
+        { label: 'Pulls ', click:  function(){shell.openExternal('https://github.com/iamashley0/discord-desktop/pulls')}},
+        { label: `Quit from App (Dont :c)`, click:  function(){app.quit();}}
     ]);
     tray = new Tray('src/icons/discord.png')
-    tray.setToolTip('Super duper secret menu LMAO ')
+    tray.setToolTip('Super duper secret discord menu LMAO')
     tray.setContextMenu(contextMenu)
     tray.on('click', function(){
         mainWindow.show();
