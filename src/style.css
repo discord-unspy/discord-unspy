@@ -29,7 +29,7 @@ body {
 
 #titlebar {
   display: block;
-  position:relative;
+  position: relative;
   height: 24px;
   font-weight: 600;
   width: 100%;
@@ -47,7 +47,7 @@ body {
 
 #titlebar {
   padding: 4px;
-  position:relative;
+  position: relative;
 }
 
 #titlebar #drag-region {
