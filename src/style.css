@@ -29,25 +29,25 @@ body {
 
 #titlebar {
   display: block;
-  position:relative;
+  position: fixed;
   height: 24px;
   font-weight: 600;
-  width: 100%;
+  width: calc(100% - 2px);
 }
 
 .maximized #titlebar {
   width: 100%;
   padding: 0;
-} 
+}
 
 #main {
   height: calc(100% - 24px);
+  margin-top: 24px;
   overflow-y: auto;
 }
 
 #titlebar {
   padding: 4px;
-  position:relative;
 }
 
 #titlebar #drag-region {
