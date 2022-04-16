@@ -78,7 +78,7 @@ app.on('ready', function() {
     const str2 = str.toLowerCase()
     const str3 = str2.charAt(0).toUpperCase() + str2.slice(1);
     const contextMenu = Menu.buildFromTemplate([
-        { label: `Discord Unspy 2.0.2 ${str3} by Ashley`, },
+        { label: `Discord Unspy 2.0.3 ${str3} by Ashley`, },
         { label: 'Source code ', click:  function(){shell.openExternal('https://github.com/iamashley0/Discord')}},
         { label: 'Issues', click:  function(){shell.openExternal('https://github.com/iamashley0/Discord/issues')}},
         { label: 'Pulls ', click:  function(){shell.openExternal('https://github.com/iamashley0/discord-desktop/pulls')}},
@@ -121,6 +121,5 @@ ipcMain.on('titlebar', (event, arg) => {
         mainWindow.restore();
     }
   })
-
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
