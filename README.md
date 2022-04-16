@@ -2,8 +2,8 @@
  
 <img src="https://user-images.githubusercontent.com/65588168/163461090-8a8f6876-a5b3-4d3e-8c6a-1f1be4993f76.png">
 <a href="https://www.codefactor.io/repository/github/iamashley0/discord-desktop"><img src="https://www.codefactor.io/repository/github/iamashley0/discord-desktop/badge" alt="CodeFactor" /></a>
-<img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/iamashley0/discord-desktop/main">
-
+<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/iamashley0/discord-desktop">
+ <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/iamashley0/discord-desktop">
 
 # Discord Unspy Edition
 
