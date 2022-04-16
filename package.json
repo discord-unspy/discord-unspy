@@ -15,7 +15,7 @@
   "dependencies": {
     "@cliqz/adblocker": "^1.23.7",
     "@cliqz/adblocker-electron": "^1.23.7",
-    "electron": "^18.0.3",
-    "node-fetch": "^2.6.1"
+    "electron": "^18.0.4",
+    "node-fetch": "^3.2.3"
   }
 }

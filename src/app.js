@@ -1,27 +1,32 @@
-const main = document.getElementById('main')
-const app = document.createElement("webview");
+const main = document.getElementById('main');
+const app = document.createElement('webview');
+
 const config = require('../config.json');
 
-if (config.DISCORD_VERSION == "Stable") {
-    app.setAttribute("id", "app");
-     app.setAttribute("src", "https://discord.com/app");
-    main.appendChild(app);
-}
-if (config.DISCORD_VERSION == "PTB") {
-    app.setAttribute("id", "app");
-    app.setAttribute("src", "https://ptb.discord.com/app");
-    main.appendChild(app);
-}
-if (config.DISCORD_VERSION == "Canary") {
+let src = null;
 
-    app.setAttribute("id", "app");
-    app.setAttribute("src", "https://canary.discord.com/app");
-    main.appendChild(app);
+switch (config.DISCORD_BUILD.toLowerCase()) {
+  case 'stable':
+    src = 'https://discord.com/app';
+    break;
+  case 'ptb':
+    src = 'https://ptb.discord.com/app';
+    break;
+  case 'canary':
+    src = 'https://canary.discord.com/app';
+    break;
+  default:
+    throw new Error(`Unknown Discord build: ${config.DISCORD_BUILD}`);
 }
-app.addEventListener('dom-ready', function () {
-setInterval(() => {
-        app.insertCSS(`
+
+app.setAttribute('id', 'app');
+app.setAttribute('src', src);
+main.appendChild(app);
+
+app.addEventListener('dom-ready', () => {
+  setInterval(() => {
+    app.insertCSS(`
         @import url('https://kaxozae.xyz/css/discord-kax-themev6.css')
         `);
-}, 20000);
+  }, 20_000);
 });
