@@ -7,7 +7,8 @@ let src = null;
 
 switch (config.DISCORD_BUILD.toLowerCase()) {
   case 'stable':
-    src = 'https://discord.com/app';
+    // https://github.com/iamashley0/discord-desktop/issues/6
+    src = 'https://ptb.discord.com/app';
     break;
   case 'ptb':
     src = 'https://ptb.discord.com/app';
