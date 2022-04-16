@@ -1,14 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-* {margin: 0; user-select: none; padding: 0; border: 0; vertical-align: baseline; font-family: 'Inter', sans-serif;}
-html {box-sizing: border-box;}
-*, *:before, *:after {box-sizing: inherit;}
-html, body {height: 100%; margin: 0;}
+* {
+  margin: 0;
+  user-select: none;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: 'Inter', sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 
 body {
-  
   background: #202225;
-  color: #FFF;
-  
+  color: #fff;
 }
 
 h1 {
@@ -19,7 +34,7 @@ h1 {
 
 p {
   margin-top: 10px;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* Styling of window frame and titlebar */
@@ -29,7 +44,7 @@ body {
 
 #titlebar {
   display: block;
-  position:relative;
+  position: relative;
   height: 24px;
   font-weight: 600;
   width: 100%;
@@ -38,7 +53,7 @@ body {
 .maximized #titlebar {
   width: 100%;
   padding: 0;
-} 
+}
 
 #main {
   height: calc(100% - 24px);
@@ -47,7 +62,7 @@ body {
 
 #titlebar {
   padding: 4px;
-  position:relative;
+  position: relative;
 }
 
 #titlebar #drag-region {
@@ -57,7 +72,7 @@ body {
 }
 
 #titlebar {
-  color: #FFF;
+  color: #fff;
 }
 
 #titlebar #drag-region {
@@ -73,9 +88,6 @@ body {
   overflow: hidden;
   font-size: 12px;
   color: #b9bbbe;
-}
-#window-title svg {
- 
 }
 
 .maximized #window-title {
@@ -96,11 +108,9 @@ body {
   top: 0;
   right: 0;
   height: 100%;
-  
 }
 #window-controls .icon {
-  filter: brightness(.75);
-
+  filter: brightness(0.75);
 }
 
 #window-controls {
@@ -117,9 +127,12 @@ body {
   cursor: pointer;
 }
 
-@media (-webkit-device-pixel-ratio: 1.5), (device-pixel-ratio: 1.5),
-(-webkit-device-pixel-ratio: 2), (device-pixel-ratio: 2),
-(-webkit-device-pixel-ratio: 3), (device-pixel-ratio: 3) {
+@media (-webkit-device-pixel-ratio: 1.5),
+  (device-pixel-ratio: 1.5),
+  (-webkit-device-pixel-ratio: 2),
+  (device-pixel-ratio: 2),
+  (-webkit-device-pixel-ratio: 3),
+  (device-pixel-ratio: 3) {
   #window-controls .icon {
     width: 10px;
     height: 10px;
@@ -131,22 +144,26 @@ body {
 }
 
 #window-controls .button:hover {
-  background: rgba(79,84,92,0.4);
+  background: rgba(79, 84, 92, 0.4);
 }
 
 #window-controls .button:active {
-  background: rgba(79,84,92,0.6);
+  background: rgba(79, 84, 92, 0.6);
 }
 
 #close-button:hover {
-  background: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%) !important;
+  background: hsl(
+    359,
+    calc(var(--saturation-factor, 1) * 82.6%),
+    59.4%
+  ) !important;
 }
-
 
 #min-button {
   grid-column: 1;
 }
-#max-button, #restore-button {
+#max-button,
+#restore-button {
   grid-column: 2;
 }
 #close-button {
