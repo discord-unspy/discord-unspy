@@ -1,6 +1,6 @@
 {
   "name": "discord",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "Discord whitout spyware",
   "main": "src/main.js",
   "scripts": {
