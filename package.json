@@ -29,7 +29,7 @@
     "productName": "Discord Unspy",
     "publish": {
       "provider": "generic",
-      "url": "https://updates.korbsstudio.com/discord-nospy/"
+      "url": "https://updates.korbsstudio.com/discord-unspy/"
     },
     "win": {
       "target": "nsis",
