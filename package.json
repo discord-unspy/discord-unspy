@@ -5,7 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder build -p always"
+    "build": "electron-builder build"
   },
   "repository": "https://github.com/iamashley0/discord-unspy/",
   "keywords": [
@@ -28,10 +28,8 @@
     "appId": "xyz.iamashley.discordunspy",
     "productName": "Discord Unspy",
     "publish": {
-      "provider": "github",
-      "owner": "KorbsStudio",
-      "repo": "discord-desktop",
-      "releaseType": "draft"
+      "provider": "generic",
+      "url": "https://updates.korbsstudio.com/discord-nospy/"
     },
     "win": {
       "target": "nsis",
