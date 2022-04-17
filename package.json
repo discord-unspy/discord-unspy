@@ -4,7 +4,8 @@
   "description": "Discord whitout spyware",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build -p"
   },
   "repository": "https://github.com/iamashley0/discord-unspy/",
   "keywords": [
@@ -16,6 +17,50 @@
     "@cliqz/adblocker": "^1.23.7",
     "@cliqz/adblocker-electron": "^1.23.7",
     "electron": "^18.0.4",
+    "electron-builder": "^23.0.3",
+    "electron-log": "^4.4.6",
+    "electron-updater": "^5.0.1",
     "node-fetch": "^3.2.3"
+  },
+  "build": {
+    "appId": "xyz.iamashley.discordunspy",
+    "productName": "Discord Unspy",
+    "publish": {
+      "provider": "github",
+      "owner": "KorbsStudio",
+      "repo": "discord-desktop",
+      "releaseType": "draft"
+    },
+    "win": {
+      "target": "nsis",
+      "asar": "false"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "darkModeSupport": true,
+      "category": "public.app-category.social-networking"
+    },
+    "linux": {
+      "target": [
+        "snap",
+        "AppImage"
+      ],
+      "maintainer": "xyz.iamashley.discordunspy",
+      "category": "Network",
+      "vendor": "Ashley",
+      "description": "Discord whitout spyware"
+    },
+    "nsis": {
+      "deleteAppDataOnUninstall": true,
+      "shortcutName": "Discord Unspy",
+      "displayLanguageSelector": true,
+      "oneClick": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": false
+    }
   }
 }
