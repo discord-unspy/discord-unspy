@@ -5,7 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder build -p"
+    "build": "electron-builder build -p never"
   },
   "repository": "https://github.com/iamashley0/discord-unspy/",
   "keywords": [
