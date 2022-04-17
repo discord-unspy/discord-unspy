@@ -23,9 +23,3 @@ switch (config.DISCORD_BUILD.toLowerCase()) {
 app.setAttribute('id', 'app');
 app.setAttribute('src', src);
 main.appendChild(app);
-
-app.addEventListener('dom-ready', () => {
-  setInterval(() => {
- 
-  }, 20_000);
-});
