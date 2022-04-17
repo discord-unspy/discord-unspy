@@ -1,0 +1,8 @@
+[Desktop entry]
+Name=Discord Unspy
+GenericName=Discord
+Version=3.0.1
+Comment=The Discord client with a built-in tracker blocker
+Encoding=UTF-8
+Type=Application
+Exec=/home/.../discord-desktop/Discord.sh
