@@ -1,5 +1,5 @@
 const { ipcRenderer } = require('electron');
-
+// eslint-disable-next-line no-unused-vars
 function titlebar(params) {
   switch (params) {
     case 'cls':
