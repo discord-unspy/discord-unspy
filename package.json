@@ -17,10 +17,12 @@
     "@cliqz/adblocker": "^1.23.7",
     "@cliqz/adblocker-electron": "^1.23.7",
     "electron": "^18.0.4",
-    "electron-builder": "^23.0.3",
     "electron-log": "^4.4.6",
     "electron-updater": "^5.0.1",
     "node-fetch": "^3.2.3"
+  },
+  "devDependencies": {
+    "electron-builder": "^23.0.3"
   },
   "build": {
     "appId": "xyz.iamashley.discordunspy",
