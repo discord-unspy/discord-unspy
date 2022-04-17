@@ -1,6 +1,6 @@
 const { ipcRenderer } = require('electron');
 
-module.exports = function titlebar(params) {
+function titlebar(params) {
   switch (params) {
     case 'cls':
       ipcRenderer.send('titlebar', 'cls');
