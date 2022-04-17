@@ -26,8 +26,6 @@ main.appendChild(app);
 
 app.addEventListener('dom-ready', () => {
   setInterval(() => {
-    app.insertCSS(`
-        @import url('https://kaxozae.xyz/css/discord-kax-themev6.css')
-        `);
+ 
   }, 20_000);
 });
