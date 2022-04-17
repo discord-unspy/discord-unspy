@@ -1,10 +1,34 @@
 const { app, BrowserWindow, ipcMain, Tray, Menu, shell } = require('electron');
 const { readFile, writeFile } = require('node:fs/promises');
+const { autoUpdater } = require("electron-updater")
+const log = require('electron-log')
+
+const isMac = process.platform === 'darwin'
 
 const config = require('../config.json');
 const { version } = require('../package.json');
 
 let fetch, ElectronBlocker, fullLists;
+
+// Detect Platform
+if (process.platform == 'darwin') {
+  app.whenReady().then(() => {
+    global.frame = false;
+    global.titleBarStyle = 'hiddenInset';
+    global.update = console.log('Auto update not supported on this platform ;-;');
+})}
+else if(process.platform == 'win32'){
+  app.whenReady().then(() => {
+    global.frame = false;
+    global.titleBarStyle = 'hidden';
+    global.update = autoUpdater.checkForUpdates();
+})}
+else{
+  app.whenReady().then(() => { // Linux, ChromeOS, or whatever
+    global.frame = true;
+    global.titleBarStyle = 'hidden';
+    global.update = autoUpdater.checkForUpdates();
+})}
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -23,8 +47,12 @@ async function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1200,
     height: 600,
-    frame: false,
-    backgroundColor: '#FFF',
+    minWidth: 730,
+    minHeight: 360,
+    frame: global.frame,
+    titleBarStyle: global.titleBarStyle,
+    autoHideMenuBar: true,
+    backgroundColor: '#202225',
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
@@ -169,3 +197,31 @@ ipcMain.on('titlebar', (_, arg) => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+const template = [
+  // { role: 'appMenu' }
+  ...(isMac ? [{
+    label: app.name,
+    submenu: [
+      { role: 'about' },
+      { role: 'quit' }
+    ]
+  }] : []),
+  // { role: 'fileMenu' }
+  {
+    label: 'Discord NoSpy',
+    submenu: [
+      isMac ? { role: 'close' } : { role: 'quit' }
+    ]
+  },
+  // { role: 'viewMenu' }
+  {
+    label: 'View',
+    submenu: [
+      { role: 'reload' },
+      { role: 'toggleDevTools' },
+    ]
+  },
+]
+
+const menu = Menu.buildFromTemplate(template)
+Menu.setApplicationMenu(menu)
