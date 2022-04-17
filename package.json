@@ -28,8 +28,10 @@
     "appId": "xyz.iamashley.discordunspy",
     "productName": "Discord Unspy",
     "publish": {
-      "provider": "generic",
-      "url": "https://updates.korbsstudio.com/discord-unspy/"
+      "provider": "github",
+      "owner": "iamashley0",
+      "repo": "discord-desktop",
+      "releaseType": "draft"
     },
     "win": {
       "target": "nsis",
