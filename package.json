@@ -15,15 +15,13 @@
   "author": "Ashley",
   "license": "MIT",
   "dependencies": {
-    "@cliqz/adblocker": "^1.23.7",
     "@cliqz/adblocker-electron": "^1.23.7",
-    "electron-log": "^4.4.6",
     "electron-updater": "^5.0.1",
     "node-fetch": "^3.2.3"
   },
   "devDependencies": {
     "electron": "^18.0.4",
-    "electron-builder": "^23.0.3"
+    "electron-builder": "^22.5.1"
   },
   "build": {
     "appId": "xyz.iamashley.discordunspy",
@@ -47,7 +45,7 @@
       "category": "public.app-category.social-networking"
     },
     "linux": {
-      "asar":false,
+      "asar": false,
       "target": [
         "snap",
         "AppImage"

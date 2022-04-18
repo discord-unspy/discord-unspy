@@ -188,12 +188,12 @@ body {
 }
 
 /* OS */
-.Mac [data-for-os=windows] {
-  display: none !important
+.Mac [data-for-os='windows'] {
+  display: none !important;
 }
 
-.Linux [data-for-os=windows] {
-  display: none !important
+.Linux [data-for-os='windows'] {
+  display: none !important;
 }
 
 .Linux #main {
