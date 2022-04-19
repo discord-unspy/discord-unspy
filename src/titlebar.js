@@ -1,4 +1,5 @@
 const { ipcRenderer } = require('electron');
+
 // eslint-disable-next-line no-unused-vars
 function titlebar(params) {
   switch (params) {
@@ -16,8 +17,30 @@ function titlebar(params) {
       ipcRenderer.send('titlebar', 'res');
       document.body.className = 'none';
   }
-};
+}
 
-var htmlElement=document.documentElement;if(navigator.platform.match(/(Mac)/i)){htmlElement.className='Mac'}
-if(navigator.platform.match(/(Linux)/i)){htmlElement.className='Linux'}else{htmlElement.className='Windows'}
-document.addEventListener('click',function(event){var target=event.target;if(target.getAttribute&&target.getAttribute('data-action')==='switch-os'){event.preventDefault();htmlElement.className=target.getAttribute('data-os')}})
+const htmlElement = document.documentElement;
+
+switch (process.platform) {
+  case 'darwin':
+    htmlElement.className = 'Mac';
+    break;
+  case 'win32':
+    htmlElement.className = 'Windows';
+    break;
+  case 'linux':
+    htmlElement.className = 'Linux';
+}
+
+document.addEventListener('click', (event) => {
+  const { target } = event;
+
+  if (
+    typeof target.getAttribute === 'function' &&
+    target.getAttribute('data-action') === 'switch-os'
+  ) {
+    event.preventDefault();
+
+    htmlElement.className = target.getAttribute('data-os');
+  }
+});

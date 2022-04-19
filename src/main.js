@@ -1,9 +1,6 @@
 const { app, BrowserWindow, ipcMain, Tray, Menu, shell } = require('electron');
 const { readFile, writeFile } = require('node:fs/promises');
-const { autoUpdater } = require("electron-updater")
-const log = require('electron-log')
-
-const isMac = process.platform === 'darwin'
+const { autoUpdater } = require('electron-updater');
 
 const config = require('../config.json');
 const { version } = require('../package.json');
@@ -11,24 +8,31 @@ const { version } = require('../package.json');
 let fetch, ElectronBlocker, fullLists;
 
 // Detect Platform
-if (process.platform == 'darwin') {
-  app.whenReady().then(() => {
-    global.frame = false;
-    global.titleBarStyle = 'hiddenInset';
-    global.update = console.log('Auto update not supported on this platform ;-;');
-})}
-else if(process.platform == 'win32'){
-  app.whenReady().then(() => {
-    global.frame = false;
-    global.titleBarStyle = 'hidden';
-    global.update = autoUpdater.checkForUpdates();
-})}
-else{
-  app.whenReady().then(() => { // Linux, ChromeOS, or whatever
-    global.frame = true;
-    global.titleBarStyle = 'hidden';
-    global.update = autoUpdater.checkForUpdates();
-})}
+switch (process.platform) {
+  case 'darwin':
+    app.whenReady().then(() => {
+      global.frame = false;
+      global.titleBarStyle = 'hiddenInset';
+      global.update = console.log(
+        'Auto update is unsupported on this platform.'
+      );
+    });
+    break;
+  case 'win32':
+    app.whenReady().then(async () => {
+      global.frame = false;
+      global.titleBarStyle = 'hidden';
+      global.update = await autoUpdater.checkForUpdates();
+    });
+    break;
+  default:
+    app.whenReady().then(async () => {
+      // Linux, ChromeOS, or whatever
+      global.frame = true;
+      global.titleBarStyle = 'hidden';
+      global.update = await autoUpdater.checkForUpdates();
+    });
+}
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -166,11 +170,13 @@ app.on('ready', async () => {
   });
 });
 
+const isMac = process.platform === 'darwin';
+
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
   // On macOS it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
-  if (process.platform !== 'darwin') app.quit();
+  if (!isMac) app.quit();
 });
 
 app.on('activate', async () => {
@@ -199,29 +205,25 @@ ipcMain.on('titlebar', (_, arg) => {
 // code. You can also put them in separate files and require them here.
 const template = [
   // { role: 'appMenu' }
-  ...(isMac ? [{
-    label: app.name,
-    submenu: [
-      { role: 'about' },
-      { role: 'quit' }
-    ]
-  }] : []),
+  ...(isMac
+    ? [
+        {
+          label: app.name,
+          submenu: [{ role: 'about' }, { role: 'quit' }]
+        }
+      ]
+    : []),
   // { role: 'fileMenu' }
   {
     label: 'Discord NoSpy',
-    submenu: [
-      isMac ? { role: 'close' } : { role: 'quit' }
-    ]
+    submenu: [isMac ? { role: 'close' } : { role: 'quit' }]
   },
   // { role: 'viewMenu' }
   {
     label: 'View',
-    submenu: [
-      { role: 'reload' },
-      { role: 'toggleDevTools' },
-    ]
-  },
-]
+    submenu: [{ role: 'reload' }, { role: 'toggleDevTools' }]
+  }
+];
 
-const menu = Menu.buildFromTemplate(template)
-Menu.setApplicationMenu(menu)
+const menu = Menu.buildFromTemplate(template);
+Menu.setApplicationMenu(menu);
