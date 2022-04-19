@@ -1,13 +1,16 @@
+
 <div align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
  
 <img src="https://user-images.githubusercontent.com/65588168/163461090-8a8f6876-a5b3-4d3e-8c6a-1f1be4993f76.png">
 <a href="https://www.codefactor.io/repository/github/iamashley0/discord-desktop"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/iamashley0/discord-desktop"></a>
 <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/iamashley0/discord-desktop">
  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/iamashley0/discord-desktop">
-
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<img src="https://img.shields.io/badge/all_contributors-4-pink.svg?style=flat-square">
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+ 
+ 
 # Discord Unspy Edition
 
 **Discord's Electron client, now with built-in tracker blocker!**
@@ -54,7 +57,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://korbsstudio.com"><img src="https://avatars.githubusercontent.com/u/51213244?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Korbs</b></sub></a><br /><a href="https://github.com/iamashley0/discord-desktop/commits?author=KorbsStudio" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/VoltrexMaster"><img src="https://avatars.githubusercontent.com/u/62040526?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammed Keyvanzadeh</b></sub></a><br /><a href="#maintenance-VoltrexMaster" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=VoltrexMaster" title="Code">💻</a></td>
-   </tr>
+      <td align="center"><a href="https://iamashley.xyz"><img src="https://avatars.githubusercontent.com/u/65588168?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ashley</b></sub></a><br /><a href="#maintenance-iamashley0" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=iamashley0" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/VoltrexMaster"><img src="https://avatars.githubusercontent.com/u/62040526?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammed Keyvanzadeh</b></sub></a><br /><a href="#maintenance-VoltrexMaster" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=VoltrexMaster" title="Code">💻</a></td>
+    </tr>
 </table>
 
 <!-- markdownlint-restore -->
