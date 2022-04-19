@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "iamashley0",
+      "name": "Ashley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65588168?v=4",
+      "profile": "https://iamashley.xyz",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "discord-desktop",
+  "projectOwner": "iamashley0",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
