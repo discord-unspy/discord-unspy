@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "VoltrexMaster",
+      "name": "Mohammed Keyvanzadeh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62040526?v=4",
+      "profile": "https://github.com/VoltrexMaster",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "discord-desktop",
+  "projectOwner": "iamashley0",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
