@@ -55,9 +55,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-     <td align="center"><a href="https://iamashley.xyz"><img src="https://avatars.githubusercontent.com/u/65588168?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ashley</b></sub></a><br /><a href="#maintenance-iamashley0" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=iamashley0" title="Code">💻</a></td>
+    <td align="center"><a href="https://korbsstudio.com"><img src="https://avatars.githubusercontent.com/u/51213244?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Korbs</b></sub></a><br /><a href="https://github.com/iamashley0/discord-desktop/commits?author=KorbsStudio" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/VoltrexMaster"><img src="https://avatars.githubusercontent.com/u/62040526?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammed Keyvanzadeh</b></sub></a><br /><a href="#maintenance-VoltrexMaster" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=VoltrexMaster" title="Code">💻</a></td>
+      <td align="center"><a href="https://iamashley.xyz"><img src="https://avatars.githubusercontent.com/u/65588168?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ashley</b></sub></a><br /><a href="#maintenance-iamashley0" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=iamashley0" title="Code">💻</a></td>
      <td align="center"><a href="https://github.com/VoltrexMaster"><img src="https://avatars.githubusercontent.com/u/62040526?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammed Keyvanzadeh</b></sub></a><br /><a href="#maintenance-VoltrexMaster" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=VoltrexMaster" title="Code">💻</a></td>
-   </tr>
+    </tr>
 </table>
 
 <!-- markdownlint-restore -->
