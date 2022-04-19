@@ -1,4 +1,7 @@
 <div align="center">
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
  
 <img src="https://user-images.githubusercontent.com/65588168/163461090-8a8f6876-a5b3-4d3e-8c6a-1f1be4993f76.png">
 <a href="https://www.codefactor.io/repository/github/iamashley0/discord-desktop"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/iamashley0/discord-desktop"></a>
@@ -39,3 +42,23 @@ change config.json owo
 # NOTE
 
 This is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://korbsstudio.com"><img src="https://avatars.githubusercontent.com/u/51213244?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Korbs</b></sub></a><br /><a href="https://github.com/iamashley0/discord-desktop/commits?author=KorbsStudio" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
