@@ -6,11 +6,19 @@
   "commit": false,
   "contributors": [
     {
+ all-contributors/add-KorbsStudio
       "login": "KorbsStudio",
       "name": "Korbs",
       "avatar_url": "https://avatars.githubusercontent.com/u/51213244?v=4",
       "profile": "https://korbsstudio.com",
       "contributions": [
+       "login": "VoltrexMaster",
+      "name": "Mohammed Keyvanzadeh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62040526?v=4",
+      "profile": "https://github.com/VoltrexMaster",
+      "contributions": [
+        "maintenance",
+        main
         "code"
       ]
     }
