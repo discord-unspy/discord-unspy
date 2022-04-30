@@ -172,6 +172,12 @@ app.on('ready', async () => {
         await shell.openExternal('https://github.com/iamashley0/Discord');
       }
     },
+        {
+      label: 'Whats new?',
+      click: async () => {
+        await shell.openExternal('https://github.com/iamashley0/discord-desktop/releases/tag/5.0.1');
+      }
+    },
     {
       label: 'Issues',
       click: async () => {
@@ -180,6 +186,7 @@ app.on('ready', async () => {
         );
       }
     },
+    
     {
       label: 'Pull requests',
       click: async () => {
