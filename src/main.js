@@ -175,7 +175,7 @@ app.on('ready', async () => {
         {
       label: 'Whats new?',
       click: async () => {
-        await shell.openExternal('https://github.com/iamashley0/discord-desktop/releases/tag/5.0.1');
+        await shell.openExternal(`https://github.com/iamashley0/discord-desktop/releases/tag/${version}`);
       }
     },
     {
@@ -186,7 +186,7 @@ app.on('ready', async () => {
         );
       }
     },
-    
+
     {
       label: 'Pull requests',
       click: async () => {
@@ -244,6 +244,19 @@ ipcMain.on('titlebar', (_, arg) => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+  let build = null;
+
+  switch (config.DISCORD_BUILD.toLowerCase()) {
+    case 'stable':
+      build = 'Stable';
+      break;
+    case 'ptb':
+      build = 'PTB';
+      break;
+    case 'canary':
+      build = 'Canary';
+  }
 const template = [
   // { role: 'appMenu' }
   ...(isMac
@@ -256,7 +269,7 @@ const template = [
     : []),
   // { role: 'fileMenu' }
   {
-    label: 'Discord NoSpy 5',
+    label: `Discord UnSpy ${build} 5`,
     submenu: [isMac ? { role: 'close' } : { role: 'quit' }]
   },
   // { role: 'viewMenu' }
