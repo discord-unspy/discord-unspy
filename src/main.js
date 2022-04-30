@@ -56,6 +56,7 @@ async function createWindow() {
     frame: global.frame,
     titleBarStyle: global.titleBarStyle,
     autoHideMenuBar: true,
+    show:false,
     backgroundColor: '#202225',
     webPreferences: {
       nodeIntegration: true,
