@@ -96,8 +96,22 @@ async function createWindow() {
     console.log('style', style.length, url);
   });
 
-  // and load the index.html of the app.
-  await mainWindow.loadFile('src/index.html');
+ await mainWindow.loadFile('src/index.html');
+   var splash = new BrowserWindow({
+    width: 300,
+    height: 350,
+    transparent: true,
+    frame: false,
+    alwaysOnTop: true
+  });
+
+  splash.loadFile('src/splash.html');
+  splash.center();
+  setTimeout(function () {
+    splash.close();
+    mainWindow.center();
+    mainWindow.show();
+  }, 55000);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
