@@ -1,8 +1,8 @@
 {
   "name": "discord",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "includeRequiredLib": true,
-  "description": "Discord whitout spyware",
+  "description": "Discord whitout any aspyware",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
