@@ -54,9 +54,9 @@ async function createWindow() {
     minWidth: 730,
     minHeight: 360,
     frame: global.frame,
+    show:false,
     titleBarStyle: global.titleBarStyle,
     autoHideMenuBar: true,
-    show:false,
     backgroundColor: '#202225',
     webPreferences: {
       nodeIntegration: true,
@@ -98,7 +98,26 @@ async function createWindow() {
   });
 
  await mainWindow.loadFile('src/index.html');
-   var splash = new BrowserWindow({
+
+  var v = null
+
+  switch (config.DISCORD_BUILD.toLowerCase()) {
+    case 'stable':
+      v = 'Stable';
+      break;
+    case 'ptb':
+      v = 'PTB';
+      break;
+    case 'canary':
+      v = 'Canary';
+  }
+
+ console.log("WELCOME TO DISCORD UNSPY!")
+ console.log(`VERSION ${version} ${v}`)
+ console.log("this version blocks trackers from discord! ")
+ console.log("bellow,you will see the requests that are being blocked. Thx for using unspy!")
+
+ var splash = new BrowserWindow({
     width: 300,
     height: 350,
     transparent: true,
@@ -112,7 +131,7 @@ async function createWindow() {
     splash.close();
     mainWindow.center();
     mainWindow.show();
-  }, 55000);
+  }, 55765);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
@@ -230,7 +249,7 @@ const template = [
     : []),
   // { role: 'fileMenu' }
   {
-    label: 'Discord NoSpy',
+    label: 'Discord NoSpy 5',
     submenu: [isMac ? { role: 'close' } : { role: 'quit' }]
   },
   // { role: 'viewMenu' }
