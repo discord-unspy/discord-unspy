@@ -165,7 +165,7 @@ app.on('ready', async () => {
   }
 
   const contextMenu = Menu.buildFromTemplate([
-    { label: `Discord Unspy ${version} ${build} by Ashley` },
+    { label: `Discord UnSpy ${version} ${build} by Ashley` },
     {
       label: 'Source code',
       click: async () => {
@@ -196,7 +196,7 @@ app.on('ready', async () => {
       }
     },
     {
-      label: "Quit from Unspy (Don't :c)",
+      label: "Quit from UnSpy (Don't :c)",
       click: () => {
         app.quit();
       }
