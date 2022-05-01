@@ -20,15 +20,15 @@
 
 You can download Discord Unspy from [Releases](https://github.com/iamashley0/discord-desktop/releases).
 
-# Build
+# Running
 
 To run this repository you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download) (which comes with [npm](https://npmjs.com/)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-git clone https://github.com/iamashley0/discord-unspy
+git clone https://github.com/iamashley0/discord-desktop
 # Go into the repository
-cd discord-unspy
+cd discord-desktop
 # Install dependencies
 npm i
 # Run the app
