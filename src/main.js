@@ -173,7 +173,7 @@ app.on('ready', async () => {
       }
     },
         {
-      label: 'Whats new?',
+      label: 'Whats new on unspy?',
       click: async () => {
         await shell.openExternal(`https://github.com/iamashley0/discord-desktop/releases/tag/${version}`);
       }
@@ -196,7 +196,7 @@ app.on('ready', async () => {
       }
     },
     {
-      label: "Quit from App (Don't :c)",
+      label: "Quit from Unspy (Don't :c)",
       click: () => {
         app.quit();
       }
@@ -269,14 +269,27 @@ const template = [
     : []),
   // { role: 'fileMenu' }
   {
-    label: `Discord UnSpy ${build} 5`,
-    submenu: [isMac ? { role: 'close' } : { role: 'quit' }]
+    label: `Discord UnSpy ${build} 6`,
+    submenu: [isMac ? { role: 'close' } : { role: 'quit' },{
+      role:'help',
+      click: () => {
+        shell.openExternal('https://support.discord.com');
+       },
+    }]
   },
   // { role: 'viewMenu' }
   {
-    label: 'View',
-    submenu: [{ role: 'reload' }, { role: 'toggleDevTools' }]
-  }
+    label: 'Misc.',
+    submenu: [{ role: 'reload' }, { role: 'toggleDevTools' }, { role: 'zoomIn'}, { role: 'zoomOut'},{role:'resetZoom'}]
+  },
+    {
+    label: 'Edit',
+    submenu: [{ role: 'copy' }, { role: 'paste' }, {role:'pasteAndMatchStyle'},{ role: 'cut'},{role:'delete'}, { role: 'selectAll'}]
+  },
+    {
+    label: 'Utils',
+    submenu: [{ role: 'showSubstitutions' }, {role:'hide'},{ role: 'unhide'},{role:'hideOthers'}, { role: 'toggleSpellChecker'}]
+  },
 ];
 
 const menu = Menu.buildFromTemplate(template);
