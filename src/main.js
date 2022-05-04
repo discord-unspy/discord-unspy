@@ -116,7 +116,7 @@ async function createWindow() {
  console.log(`VERSION ${version} ${v}`)
  console.log("this version blocks trackers from discord! ")
  console.log("bellow,you will see the requests that are being blocked. Thx for using unspy!")
-
+ 
  var splash = new BrowserWindow({
     width: 300,
     height: 350,
@@ -131,7 +131,7 @@ async function createWindow() {
     splash.close();
     mainWindow.center();
     mainWindow.show();
-  }, 55765);
+  }, 53765);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
@@ -173,7 +173,7 @@ app.on('ready', async () => {
       }
     },
         {
-      label: 'Whats new on unspy?',
+      label: 'Whats new on this version?',
       click: async () => {
         await shell.openExternal(`https://github.com/iamashley0/discord-desktop/releases/tag/${version}`);
       }
@@ -269,7 +269,7 @@ const template = [
     : []),
   // { role: 'fileMenu' }
   {
-    label: `Discord UnSpy ${build} 6`,
+    label: `Discord UnSpy ${build} 7`,
     submenu: [isMac ? { role: 'close' } : { role: 'quit' },{
       role:'help',
       click: () => {
