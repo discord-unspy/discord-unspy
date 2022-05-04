@@ -1,7 +1,5 @@
 
 <div align="center">
-
- 
 <img src="https://user-images.githubusercontent.com/65588168/163461090-8a8f6876-a5b3-4d3e-8c6a-1f1be4993f76.png">
 <a href="https://www.codefactor.io/repository/github/iamashley0/discord-desktop"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/iamashley0/discord-desktop"></a>
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/iamashley0/discord-desktop">
@@ -10,9 +8,9 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
  
  
-# Discord Unspy Edition
+# Discord UnSpy
 
-**Discord's Electron client, now with built-in tracker blocker!**
+**Discord's Electron client,with built-in tracker blocker!**
 
 </div>
 
@@ -39,13 +37,9 @@ If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.c
 
 # How to use Discord PTB/Canary?
 
-change config.json owo
+change config.json
 
-# NOTE
-
-This is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.
-
-## Contributors ✨
+## Contributors ✨ :3 
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -66,3 +60,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+# Important
+<p>Please note that this is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.</p>
