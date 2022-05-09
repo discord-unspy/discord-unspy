@@ -1,3 +1,13 @@
 {
-  "DISCORD_BUILD": "stable"
+  "DISCORD_BUILD": "stable",
+  "SYSTEM_TRAY_ICON":"white",
+  "DISCORD_PRODUCT_COLOR_LIST":[
+  "blurple",
+  "green",
+  "yellow",
+  "fuchsia",
+  "red",
+  "white"
+  ]
 }
+
