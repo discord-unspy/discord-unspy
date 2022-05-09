@@ -116,7 +116,7 @@ async function createWindow() {
  console.log(`VERSION ${version} ${v}`)
  console.log("this version blocks trackers from discord! ")
  console.log("bellow,you will see the requests that are being blocked. Thx for using unspy!")
- 
+
  var splash = new BrowserWindow({
     width: 300,
     height: 350,
@@ -131,7 +131,7 @@ async function createWindow() {
     splash.close();
     mainWindow.center();
     mainWindow.show();
-  }, 53765);
+  }, 55765);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
@@ -165,7 +165,7 @@ app.on('ready', async () => {
   }
 
   const contextMenu = Menu.buildFromTemplate([
-    { label: `Discord UnSpy ${version} ${build} by Ashley` },
+    { label: `Discord Unspy ${version} ${build}` },
     {
       label: 'Source code',
       click: async () => {
@@ -173,7 +173,7 @@ app.on('ready', async () => {
       }
     },
         {
-      label: 'Whats new on this version?',
+      label: 'Whats new on UnSpy?',
       click: async () => {
         await shell.openExternal(`https://github.com/iamashley0/discord-desktop/releases/tag/${version}`);
       }
@@ -196,14 +196,18 @@ app.on('ready', async () => {
       }
     },
     {
-      label: "Quit from UnSpy (Don't :c)",
+      label: "Quit from Unspy (Don't :c)",
       click: () => {
         app.quit();
       }
     }
   ]);
 
-  const tray = new Tray('src/icons/discord.png');
+  // yes,i know this code is trash
+  var trayicon = config.SYSTEM_TRAY_ICON.toLowerCase()
+  var colorlist = config.DISCORD_PRODUCT_COLOR_LIST
+  if(!colorlist.includes(trayicon)) trayicon = "white"
+  const tray = new Tray(`src/icons/systemtray/png/${trayicon}.png`);
   tray.setToolTip('Super duper secret Discord menu LMAO');
   tray.setContextMenu(contextMenu);
   tray.on('click', () => {
@@ -269,7 +273,7 @@ const template = [
     : []),
   // { role: 'fileMenu' }
   {
-    label: `Discord UnSpy ${build} 7`,
+    label: `Discord UnSpy ${build} 10.0`,
     submenu: [isMac ? { role: 'close' } : { role: 'quit' },{
       role:'help',
       click: () => {
