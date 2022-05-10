@@ -10,7 +10,7 @@
  
 # Discord UnSpy
 
-**Discord's Electron client,with built-in tracker blocker!**
+**Discord's Electron client, with a built-in tracker blocker!**
 
 </div>
 
@@ -37,7 +37,7 @@ If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.c
 
 # How to use Discord PTB/Canary?
 
-change config.json
+Change config.json
 
 ## Contributors ✨ :3 
 
@@ -64,4 +64,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 # Important
 <p>Please note that this is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.
 
-  so basicly,this is illegal as using <a href="https://ublockorigin.com/">ublock origin</a> whit discord web app.</p>
+So basically, this is illegal as using <a href="https://ublockorigin.com/">ublock origin</a> with the Discord web app.</p>
