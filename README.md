@@ -37,7 +37,7 @@ If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.c
 
 # How to use Discord PTB/Canary?
 
-change config.json
+change config.json owo
 
 ## Contributors ✨ :3 
 
