@@ -8,17 +8,17 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
  
  
-# Discord UnSpy
+# Discord UnSpy Edition
 
-**Discord's Electron client,with built-in tracker blocker!**
+**Discord's Electron client with built-in tracker blocker!!!!1!!!**
 
 </div>
 
-# Download
+# Install Da unspy
 
-You can download Discord Unspy from [Releases](https://github.com/iamashley0/discord-desktop/releases).
+You can download Discord Unspy from [Releases](https://github.com/iamashley0/discord-desktop/releases)
 
-# Running
+# Running the you know repo
 
 To run this repository you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download) (which comes with [npm](https://npmjs.com/)) installed on your computer. From your command line:
 
@@ -32,10 +32,9 @@ npm i
 # Run the app
 npm start
 ```
-
 If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell) or use `node` from the command prompt.
 
-# How to use Discord PTB/Canary?
+# How to use whit Discord PTB/Canary?
 
 change config.json owo
 
@@ -61,7 +60,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-# Important
-<p>Please note that this is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.
-
-  so basicly,this is illegal as using <a href="https://ublockorigin.com/">ublock origin</a> whit discord web app.</p>
+# Legal stuff
+<p>Please note that this is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.so basicly,this is illegal as using <a href="https://ublockorigin.com/">ublock origin</a> whit discord web app. we are not discord,and this is not a offical client.</p>
