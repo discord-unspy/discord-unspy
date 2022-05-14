@@ -2,7 +2,7 @@
   "name": "discord",
   "version": "11.0.0",
   "includeRequiredLib": true,
-  "description": "Discord whitout any spyware",
+  "description": "Discord whitout spyware",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
@@ -20,7 +20,7 @@
     "node-fetch": "^3.2.3"
   },
   "devDependencies": {
-    "electron": "^18.0.4",
+    "electron": "^18.2.3",
     "electron-builder": "^22.5.1"
   },
   "build": {
