@@ -1,6 +1,6 @@
 /* Discord unspy
  * Util scripts
- * for version 7.x
+ * for version 11.x
  * inculudes;
  * https://github.com/mrdoob/eventdispatcher.js/ (SPDX-License-Identifier: MIT)
  */
