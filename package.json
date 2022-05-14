@@ -1,5 +1,5 @@
 {
-  "name": "discord",
+  "name": "discord-unspy",
   "version": "11.0.0",
   "includeRequiredLib": true,
   "description": "Discord whitout spyware",
