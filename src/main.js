@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain, Tray, Menu, shell } = require('electron');
 const { readFile, writeFile } = require('node:fs/promises');
 const { autoUpdater } = require('electron-updater');
+const path = require('path');
 
 const config = require('../config.json');
 const { version } = require('../package.json');
@@ -163,37 +164,48 @@ app.on('ready', async () => {
     case 'canary':
       build = 'Canary';
   }
+  async function createAboutWindow () {
+  // Define our child window size
+  childWindow = new BrowserWindow({
+    height: 400,
+    width: 600,
+    show: false,
+    minimizable: false,
+    maximizable: false,
+    parent: mainWindow,
+    webPreferences: {
+      nodeIntegration: true,
+      preload: path.join(__dirname, 'preload.js')
+    }
+  });
+
+
+ childWindow.webContents.on("new-window", function(event, url) {
+  event.preventDefault();
+  shell.openExternal(url);
+});
+
+  childWindow.removeMenu();
+
+  childWindow.loadURL(`file://${__dirname}/about-popup.html`);
+  childWindow.webContents.on('dom-ready', () => {
+    childWindow.show();
+  });
+  }
 
   const contextMenu = Menu.buildFromTemplate([
     { label: `Discord Unspy ${version} ${build}` },
     {
-      label: 'Source code',
-      click: async () => {
-        await shell.openExternal('https://github.com/iamashley0/Discord');
-      }
-    },
-        {
-      label: 'Whats new on UnSpy?',
+      label: 'Whats new?',
       click: async () => {
         await shell.openExternal(`https://github.com/iamashley0/discord-desktop/releases/tag/${version}`);
       }
     },
-    {
-      label: 'Issues',
+        {
+      label: 'About',
       click: async () => {
-        await shell.openExternal(
-          'https://github.com/iamashley0/Discord/issues'
-        );
-      }
-    },
-
-    {
-      label: 'Pull requests',
-      click: async () => {
-        await shell.openExternal(
-          'https://github.com/iamashley0/discord-desktop/pulls'
-        );
-      }
+          createAboutWindow();
+        }
     },
     {
       label: "Quit from Unspy (Don't :c)",
@@ -208,7 +220,7 @@ app.on('ready', async () => {
   var colorlist = config.DISCORD_PRODUCT_COLOR_LIST
   if(!colorlist.includes(trayicon)) trayicon = "white"
   const tray = new Tray(`src/icons/systemtray/png/${trayicon}.png`);
-  tray.setToolTip('Super duper secret Discord menu LMAO');
+  tray.setToolTip('Super duper secret menu LMAO');
   tray.setContextMenu(contextMenu);
   tray.on('click', () => {
     mainWindow.show();
@@ -227,7 +239,12 @@ app.on('window-all-closed', () => {
 app.on('activate', async () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-  if (mainWindow === null) await createWindow();
+  if (mainWindow === null) {
+    createWindow();
+  }
+  if (childWindow === null) {
+    createAboutWindow();
+  }
 });
 
 ipcMain.on('titlebar', (_, arg) => {
