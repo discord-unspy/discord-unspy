@@ -1,6 +1,7 @@
 {
   "DISCORD_BUILD": "stable",
   "SYSTEM_TRAY_ICON":"white",
+  "USERAGENT_NAME":"discord",
   "DISCORD_PRODUCT_COLOR_LIST":[
   "blurple",
   "green",
