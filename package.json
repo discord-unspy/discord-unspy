@@ -1,6 +1,6 @@
 {
   "name": "discord",
-  "version": "11.0.0",
+  "version": "11.1.0",
   "includeRequiredLib": true,
   "description": "Discord whitout spyware",
   "main": "src/main.js",
