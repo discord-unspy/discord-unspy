@@ -64,5 +64,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-# Legal stuff
-<p>Please note that this is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.so basicly,this is illegal as using <a href="https://ublockorigin.com/">ublock origin</a> whit discord web app. we are not discord,and this is not a offical client.</p>
+# IMPORTANT
+<p>Please note that this is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.so basicly,this is illegal as using <a href="https://ublockorigin.com/">ublock origin</a> whit discord web app. we are not discord,and this is not a offical app.</p>
+
+<p>
+Unspy is not a client "modification". this does not modify the discord app itself. this just embeds (see src/index.html) the publicly avalible (https://discord.com/app) discord web app and uses a electron package called "electron-adblocker". this does not modify the discord client,and this is not a client its more of a "browser".
+</p>
