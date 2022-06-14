@@ -6,7 +6,8 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <img src="https://img.shields.io/badge/all_contributors-4-pink.svg?style=flat-square">
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
- 
+   <img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg">
+
  
 # Discord UnSpy Edition
 
