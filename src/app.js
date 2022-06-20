@@ -7,7 +7,6 @@ let src = null;
 
 switch (config.DISCORD_BUILD.toLowerCase()) {
   case 'stable':
-    // https://github.com/iamashley0/discord-desktop/issues/6
     src = 'https://discord.com/app';
     break;
   case 'ptb':
@@ -17,7 +16,7 @@ switch (config.DISCORD_BUILD.toLowerCase()) {
     src = 'https://canary.discord.com/app';
     break;
   default:
-    throw new Error(`Unknown Discord build: ${config.DISCORD_BUILD}`);
+    throw new Error(`Unknown Discord build: ${config.DISCORD_BUILD} (maybe change it to stable?)`);
 }
 
 app.setAttribute('id', 'app');
