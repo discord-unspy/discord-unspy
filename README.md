@@ -72,7 +72,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 Unspy is not a client "modification". this does not modify the discord app itself. this just embeds (see src/index.html) the publicly avalible (https://discord.com/app) discord web app and uses a electron package called "electron-adblocker". this does not modify the discord client,and this is not a client its more of a "browser".
 </p>
 
-# Lisance
+# License
 <div align="center">
 <img src="https://www.gnu.org/graphics/agplv3-with-text-162x68.png">
 <hr>
