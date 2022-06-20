@@ -4,7 +4,6 @@
 <a href="https://www.codefactor.io/repository/github/iamashley0/discord-desktop"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/iamashley0/discord-unspy"></a>
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/iamashley0/discord-unspy">
      <img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg">
-
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <img src="https://img.shields.io/badge/all_contributors-4-pink.svg?style=flat-square">
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -72,3 +71,23 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 <p>
 Unspy is not a client "modification". this does not modify the discord app itself. this just embeds (see src/index.html) the publicly avalible (https://discord.com/app) discord web app and uses a electron package called "electron-adblocker". this does not modify the discord client,and this is not a client its more of a "browser".
 </p>
+
+# Lisance
+<div align="center">
+<img src="https://www.gnu.org/graphics/agplv3-with-text-162x68.png">
+<hr>
+   </div>
+   
+    Copyright (C) 2022 Ashley
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
