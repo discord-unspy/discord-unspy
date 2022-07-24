@@ -117,7 +117,10 @@ async function createWindow() {
  console.log(`VERSION ${version} ${v}`)
  console.log("this version blocks trackers from discord! ")
  console.log("bellow,you will see the requests that are being blocked. Thx for using unspy!")
-
+ console.log("=========== IMPORTANT ========")
+ console.log("Please note that this is just a browser that blocks the ads and potential spyware in Discord, this doesn't actually modify the Discord client itself, so this is not against Discord's ToS.so basicly,this is illegal as using ublock origin whit discord web app. we are not discord,and this is not a offical app.")
+ console.log(` Unspy is not a client "modification". this does not modify the discord app itself. this just embeds (see src/index.html) the publicly avalible (https://discord.com/app) discord web app and uses a electron package called "electron-adblocker". this does not modify the discord client,and this is not a client its more of a "browser". `)  
+ console.log("=========== IMPORTANT ========")
  var splash = new BrowserWindow({
     width: 300,
     height: 350,
