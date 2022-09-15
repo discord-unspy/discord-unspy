@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
     for (const type of ['os', 'distro', 'platform']) {
     const element = document.getElementById(`${type}-type`);
-    if (element !== null) element.innerText = process.platform.toUpperCase()
+    if (element !== null) element.innerText = process.platform.toUpperCase().replace("LINUX", "GNU/LINUX")
   }
    for (const type of ['package']) {
     const element = document.getElementById(`${type}-version`);
