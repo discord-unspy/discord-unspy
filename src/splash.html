@@ -1,16 +1,23 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Discord unspy splash screen lol</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Sigmar+One&display=swap" rel=stylesheet>
   </head>
-  <body onmousedown="return false" onselectstart="return false">
-  <style>
+<body onmousedown="return false" onselectstart="return false">
+
+
+<style>
+  body {
+  border-radius:15px;
+  }
+
   a {
   color: #fff;
   font-family: Inter, sans-serif;
 }
+
 h1 {
   color: #fff;
   font-family: Inter, sans-serif;
@@ -25,15 +32,20 @@ p {
   color: #fff;
   font-family: Inter, sans-serif;
 }
+ @font-face {
+   font-family: 'Ginto Nord';
+   font-weight: 800;
+    src:url('https://cdn.statically.io/gh/brecert/discord-quote-generator/main/Ginto-Nord-800.woff') format("woff");
+      }
   </style><style>didyouknow{color:#7289DA;font-weight:bold;margin:0}</style><style>#cover-spin{position:fixed;width:100%}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}#cover-spin::after{content:'';display:block;width:40px;height:40px;border-style:solid;border-color:white;border-top-color:transparent;border-width:4px;border-radius:50%;-webkit-animation:spin .8s linear infinite;animation:spin .8s linear infinite}#preloader{position:fixed;left:0;top:0;bottom:0;right:0;background-color:#23272A;z-index:99999}.preloader{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}.preloader span{display:inline-block;background-color:#6195FF;width:25px;height:25px;-webkit-animation:1s preload ease-in-out infinite;animation:preload 1s ease-in-out infinite;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);border-radius:50%}.preloader span:nth-child(1){-webkit-animation-delay:0s;animation-delay:0s}.preloader span:nth-child(2){-webkit-animation-delay:0.1s;animation-delay:0.1s}.preloader span:nth-child(3){-webkit-animation-delay:0.15s;animation-delay:0.15s}.preloader span:nth-child(4){-webkit-animation-delay:0.2s;animation-delay:0.2s}@-webkit-keyframes preload{0%{-webkit-transform:scale(0);transform:scale(0)}50%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(0);transform:scale(0)}}@keyframes preload{0%{-webkit-transform:scale(0);transform:scale(0)}50%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(0);transform:scale(0)}}</style>
-    <div id="preloader">
+<div id="preloader" style="border-radius: 15px;height: auto;">
     <div class="preloader">
     <br><br><br><br><br>
     <center>
     <img src="https://cdn.glitch.me/f5b4116d-9f19-465d-8266-34b2f8d1acfe/unspy-load.gif" draggable="false" height="145" >
     <b><p style="color:#7289DA"></p></b>
     <i><p id="know" style="color:white"></p></i>
-    <br><p id="load">WAIT A SEC...</p>
+    <br><p id="load" style="font-family: ginto nord;">WAIT A SEC...</p>
     <br><br><br>
     </div></center></div></div>
   <script> function n(){
@@ -106,5 +118,12 @@ setInterval(() => {
   i++
 }, 7000)
 </script>
+  <script>
+    const { remote } = require('electron')
+    const mainWindow = remote.getCurrentWindow()
+    mainWindow.setBackgroundColor('#56cc5b10')
+    mainWindow.blur()
+    mainWindow.focus()
+  </script>
   </body>
 </html>
