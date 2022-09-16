@@ -28,7 +28,7 @@ switch (process.platform) {
     break;
   default:
     app.whenReady().then(async () => {
-      // Linux, ChromeOS, or whatever
+      // GNU/Linux, ChromeOS, or whatever
       global.frame = true;
       global.titleBarStyle = 'hidden';
       global.update = await autoUpdater.checkForUpdates();
@@ -80,7 +80,7 @@ async function createWindow() {
   blocker.enableBlockingInSession(mainWindow.webContents.session);
 
   blocker.on('request-blocked', (request) => {
-    console.log('blocked', request.tabId, request.url);
+    console.log('[BLOCKED]', request._originalRequestDetails.method, request.url);
   });
   blocker.on('request-redirected', (request) => {
     console.log('redirected', request.tabId, request.url);
@@ -92,14 +92,16 @@ async function createWindow() {
     console.log('csp', request.url);
   });
   blocker.on('script-injected', (script, url) => {
-    console.log('script', script.length, url);
+    console.log('script size of ', script.length, "loaded", url);
   });
   blocker.on('style-injected', (style, url) => {
-    console.log('style', style.length, url);
+    console.log('style size of', style.length, "loaded" , url);
   });
 
  await mainWindow.loadFile('src/index.html');
 
+
+  // versions
   var v = null
 
   switch (config.DISCORD_BUILD.toLowerCase()) {
@@ -206,6 +208,13 @@ app.on('ready', async () => {
         await shell.openExternal(`https://github.com/iamashley0/discord-desktop/releases/tag/${version}`);
       }
     },
+
+      {
+      label: 'Open PokeTube',
+      click: async () => {
+        await shell.openExternal(`https://poketube.fun`);
+      }
+    },
         {
       label: 'About',
       click: async () => {
@@ -220,7 +229,7 @@ app.on('ready', async () => {
     }
   ]);
 
-  // yes,i know this code is trash
+  // yes, i know this code is trash
   var trayicon = config.SYSTEM_TRAY_ICON.toLowerCase()
   var colorlist = config.DISCORD_PRODUCT_COLOR_LIST
   if(!colorlist.includes(trayicon)) trayicon = "white"
