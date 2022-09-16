@@ -66,6 +66,12 @@ async function createWindow() {
     }
   });
 
+
+mainWindow.webContents.on("new-window", function(event, url) {
+  event.preventDefault();
+  shell.openExternal(url);
+});
+
   const blocker = await ElectronBlocker.fromLists(
     fetch,
     fullLists,
