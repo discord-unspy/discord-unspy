@@ -13,7 +13,7 @@
     "discord"
   ],
   "author": "Ashley",
-  "license": "MIT",
+  "license": "AGPL",
   "dependencies": {
     "@cliqz/adblocker-electron": "^1.23.7",
     "electron-updater": "^5.0.1",
