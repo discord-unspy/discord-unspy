@@ -1,6 +1,6 @@
 {
   "name": "discord",
-  "version": "13.0.1",
+  "version": "13.0.2",
   "includeRequiredLib": true,
   "description": "Discord whitout spyware",
   "main": "src/main.js",
@@ -27,10 +27,9 @@
     "appId": "xyz.iamashley.discordunspy",
     "productName": "Discord Unspy",
     "publish": {
-      "provider": "github",
-      "owner": "iamashley0",
-      "repo": "discord-desktop",
-      "releaseType": "draft"
+      "provider": "generic",
+      "url": "https://updates.korbsstudio.com/penpot-desktop/",
+      "channel": "latest"
     },
     "win": {
       "target": "nsis",
