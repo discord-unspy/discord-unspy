@@ -1,0 +1,106 @@
+name: Build and Deploy Update
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  build-win:
+
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run build
+    - run: Remove-Item -path .\dist\win-unpacked\ -recurse  # This will make sure that Build Artifact doesn't take a butt load of time to zip up the dist folder I need
+    - name: SFTP uploader
+      uses: wangyucode/sftp-upload-action@v1.1
+      with:
+        host: ${{ secrets.SFTP_IP }}
+        port: 22
+        removeExtraFiles: false
+        username: ${{ secrets.SFTP_USERNAME }}
+        password: ${{ secrets.SFTP_PASSWORD }}
+        localDir: ./dist/
+        remoteDir: /usr/share/nginx/updates/discord-unspy/.prepare/windows/
+
+  build-mac:
+
+    runs-on: macOS-11
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+    
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+    - run: npm install
+    - run: npm run build
+    - run: sudo rm -R ./dist/mac/
+    - name: SFTP uploader
+      uses: wangyucode/sftp-upload-action@v1.1
+      with:
+        host: ${{ secrets.SFTP_IP }}
+        port: 22
+        removeExtraFiles: false
+        username: ${{ secrets.SFTP_USERNAME }}
+        password: ${{ secrets.SFTP_PASSWORD }}
+        localDir: ./dist/
+        remoteDir: /usr/share/nginx/updates/discord-unspy/.prepare/macos/
+
+  build-linux:
+
+    runs-on: ubuntu-22.04
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run build
+    - run: sudo rm -R ./dist/linux-unpacked/
+    - name: SFTP uploader
+      uses: wangyucode/sftp-upload-action@v1.1
+      with:
+        host: ${{ secrets.SFTP_IP }}
+        port: 22
+        removeExtraFiles: false
+        username: ${{ secrets.SFTP_USERNAME }}
+        password: ${{ secrets.SFTP_PASSWORD }}
+        localDir: ./dist/
+        remoteDir: /usr/share/nginx/updates/discord-unspy/.prepare/linux/
+
+  release-update:
+    runs-on: discord-unspy-update
+    
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+    - run: sleep 300
+    - run: cp /usr/share/nginx/updates/discord-unspy/.prepare/windows/* /usr/share/nginx/updates/discord-unspy/
+    - run: cp /usr/share/nginx/updates/discord-unspy/.prepare/macos/* /usr/share/nginx/updates/discord-unspy/
+    - run: cp /usr/share/nginx/updates/discord-unspy/.prepare/linux/* /usr/share/nginx/updates/discord-unspy/
