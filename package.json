@@ -28,7 +28,7 @@
     "productName": "Discord Unspy",
     "publish": {
       "provider": "generic",
-      "url": "https://updates.korbsstudio.com/discord-unspy/",
+      "url": "https://distribute.korbsstudio.com/applications/discord-unspy/latest/",
       "channel": "latest"
     },
     "win": {
