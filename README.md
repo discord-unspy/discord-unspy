@@ -11,20 +11,20 @@
 [![Ban Spying on the Internet](https://img.shields.io/badge/Ban_Spying_on_the_Internet-2ea44f)](https://banspying.org)
 
  
-# Discord UnSpy Edition
+# Discord UnSpy
 
-**Discord's Electron client with built-in tracker blocker**
-
+**Discord's Electron client with built-in tracker blocker!!!!1!!!**
+  
 </div>
 
-# Install Discord UnSpy
+# Install da UnSpy
 
 You can download Discord Unspy from [Releases](https://github.com/iamashley0/discord-desktop/releases)
 
-# Note for Windows Users
-Please uninstall the official Discord client before proceeding to install Discord UnSpy.
+# TO WINDOWS USERS
+please remove the offical discord client before using unspy ^^
 
-# Running Discord UnSpy's Source Code
+# Running the you know repo
 
 To run this repository you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download) (which comes with [npm](https://npmjs.com/)) installed on your computer. From your command line:
 
