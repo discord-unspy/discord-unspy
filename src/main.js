@@ -310,7 +310,7 @@ const template = [
     : []),
   // { role: 'fileMenu' }
   {
-    label: `Discord UnSpy ${build} ${version}`,
+    label: `Discord UnSpy | ${build} ${version}`,
     submenu: [isMac ? { role: 'close' } : { role: 'quit' },{
       role:'help',
       click: () => {
