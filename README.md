@@ -1,6 +1,6 @@
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/65588168/163461090-8a8f6876-a5b3-4d3e-8c6a-1f1be4993f76.png">
+<img src="https://cdn.korbsstudio.com/images/Screenshot from 2023-01-03 23-15-23.png">
 <a href="https://www.codefactor.io/repository/github/discord-unspy/discord-unspy"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/discord-unspy/discord-unspy"></a>
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/iamashley0/discord-unspy">
      <img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg">
@@ -8,40 +8,44 @@
 <img src="https://img.shields.io/badge/all_contributors-4-pink.svg?style=flat-square">
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+[![Ban Spying on the Internet](https://img.shields.io/badge/Ban_Spying_on_the_Internet-2ea44f)](https://banspying.org)
+
  
 # Discord UnSpy Edition
 
-**Discord's Electron client with built-in tracker blocker!!!!1!!!**
+**Discord's Electron client with built-in tracker blocker**
 
 </div>
 
-# Install Da unspy
+# Install Discord UnSpy
 
 You can download Discord Unspy from [Releases](https://github.com/iamashley0/discord-desktop/releases)
 
+# Note for Windows Users
+Please uninstall the official Discord client before proceeding to install Discord UnSpy.
 
-# TO WINDOWS USERS!
-please remove the offical discord client before using unspy ^^
-
-# Running the you know repo
+# Running Discord UnSpy's Source Code
 
 To run this repository you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download) (which comes with [npm](https://npmjs.com/)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
 git clone https://github.com/iamashley0/discord-desktop
+
 # Go into the repository
 cd discord-desktop
+
 # Install dependencies
 npm i
+
 # Run the app
 npm start
 ```
 If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell) or use `node` from the command prompt.
 
-# How to use whit Discord PTB/Canary?
+# How to use this with Discord PTB/Canary?
 
-change config.json owo
+In the `config.json` file, change the `DISCORD_BUILD` option.
 
 ## Contributors ✨ :3 
 
