@@ -1,8 +1,8 @@
-
 <div align="center">
-<img src="https://cdn.korbsstudio.com/images/Screenshot from 2023-01-03 23-15-23.png">
-<a href="https://www.codefactor.io/repository/github/discord-unspy/discord-unspy"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/discord-unspy/discord-unspy"></a>
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/iamashley0/discord-unspy">
+
+<img width="500" src="https://md.sudovanilla.org/images/google-pixelbook-du.png">
+
+[![CodeFactor](https://www.codefactor.io/repository/github/discord-unspy/discord-unspy/badge)](https://www.codefactor.io/repository/github/discord-unspy/discord-unspy)  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/iamashley0/discord-unspy">
      <img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <img src="https://img.shields.io/badge/all_contributors-4-pink.svg?style=flat-square">
@@ -56,8 +56,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-        <td align="center"><a href="https://iamashley.xyz"><img src="https://avatars.githubusercontent.com/u/65588168?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ashley</b></sub></a><br /><a href="#maintenance-iamashley0" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=iamashley0" title="Code">💻</a></td>
-    <td align="center"><a href="https://korbsstudio.com"><img src="https://avatars.githubusercontent.com/u/51213244?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Korbs</b></sub></a><br /><a href="https://github.com/iamashley0/discord-desktop/commits?author=KorbsStudio" title="Code">💻</a></td>
+        <td align="center"><a href="https://ashley0143.xyz/"><img src="https://avatars.githubusercontent.com/u/65588168?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ashley</b></sub></a><br /><a href="#maintenance-iamashley0" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=iamashley0" title="Code">💻</a></td>
+    <td align="center"><a href="https://sudovanilla.org"><img src="https://codeberg.org/avatars/37fe80b4b83b350cd23dc5876d1c8b807554dea0caa782529ae4fcef0d75c346?size=512" width="100px;" alt=""/><br /><sub><b>Korbs</b></sub></a><br /><a href="https://github.com/iamashley0/discord-desktop/commits?author=KorbsStudio" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/VoltrexMaster"><img src="https://avatars.githubusercontent.com/u/62040526?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammed Keyvanzadeh</b></sub></a><br /><a href="#maintenance-VoltrexMaster" title="Maintenance">🚧</a> <a href="https://github.com/iamashley0/discord-desktop/commits?author=VoltrexMaster" title="Code">💻</a></td>
     </tr>
 </table>
